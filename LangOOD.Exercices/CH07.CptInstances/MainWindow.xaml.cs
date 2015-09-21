@@ -24,5 +24,15 @@ namespace CH07.CptInstances
         {
             InitializeComponent();
         }
+
+        private void btnCreate_Click(object sender, RoutedEventArgs e)
+        {
+            Objet ob = new Objet();    
+        }
+
+        private void btnShow_Click(object sender, RoutedEventArgs e)
+        {
+            lblCount.Content = Objet.GetInstancesCount();
+        }
     }
 }

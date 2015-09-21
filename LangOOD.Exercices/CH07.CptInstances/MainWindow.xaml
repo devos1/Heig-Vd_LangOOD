@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CH07.CptInstances"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="315.586" Width="525">
     <Grid>
-        
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="41,134,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.131,-0.652" Click="btnCreate_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF72FD78" Offset="0"/>
+                    <GradientStop Color="#FF0BCD14" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnShow" Content="Show number" HorizontalAlignment="Left" Margin="387,135,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.418,-0.439" Click="btnShow_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFE74D" Offset="0"/>
+                    <GradientStop Color="#FFBDA610" Offset="0.998"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblCount" Content="0" HorizontalAlignment="Left" Margin="243,120,0,0" VerticalAlignment="Top" FontSize="29.333"/>
+
     </Grid>
 </Window>

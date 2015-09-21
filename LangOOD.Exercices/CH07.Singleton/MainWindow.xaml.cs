@@ -24,5 +24,21 @@ namespace CH07.Singleton
         {
             InitializeComponent();
         }
+
+        private void btnLeft_Click(object sender, RoutedEventArgs e)
+        {
+            Objet o = Objet.CreateInstance;
+            o.texteInstance = "I'm an instance";
+            lblLeft.Content = Objet.GetInstancesCount();
+            lblRight.Content = o.texteInstance;
+        }
+
+        private void btnRight_Click(object sender, RoutedEventArgs e)
+        {
+            Objet o = Objet.CreateInstance;
+            lblLeft.Content = Objet.GetInstancesCount();
+            o.texteInstance = "Or Not";
+            lblRight.Content = o.texteInstance;
+        }
     }
 }

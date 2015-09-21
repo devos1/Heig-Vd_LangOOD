@@ -45,17 +45,30 @@ namespace CH01.Exercice01
         {
             string line;
 
-            Console.Write("Entre nombre d'itérations : ");
-            line = Console.ReadLine();
-            nbIteration =  Int32.Parse(line);
+            try
+            {
+                Console.Write("Entre nombre d'itérations : ");
+                line = Console.ReadLine();
+                nbIteration = Int32.Parse(line);
 
-            Console.Write("Entre numéro de départ : ");
-            line = Console.ReadLine();
-            valeurDepart = float.Parse(line);
+                Console.Write("Entre numéro de départ : ");
+                line = Console.ReadLine();
+                valeurDepart = float.Parse(line);
 
-            Console.Write("Entre numéro de fin : ");
-            line = Console.ReadLine();
-            valeurFinale = float.Parse(line);
+                Console.Write("Entre numéro de fin : ");
+                line = Console.ReadLine();
+                valeurFinale = float.Parse(line);
+            }
+            catch (FormatException fEx)
+            {
+                Console.WriteLine("Erreur : {0} Fermeture de l'application ", fEx.Message);
+                return;
+            }
+            catch (OverflowException oEx)
+            {
+                Console.WriteLine("Erreur : {0} Fermeture de l'application ", oEx.Message);
+                return;
+            }
 
             if (traitement(nbIteration, valeurDepart, valeurFinale))
             {

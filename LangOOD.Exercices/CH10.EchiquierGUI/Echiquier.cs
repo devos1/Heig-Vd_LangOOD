@@ -7,7 +7,10 @@ using System.Windows;
 
 namespace CH10.EchiquierGUI
 {
-    enum Pieces { roi, reine, dame, fou, cavalier, tour, pion }
+    enum Pieces { roi, reine, dame, fou, cavalier, tour, pion, vide }
+
+
+    // Not Used
     struct Point
     {
         private int x, y;
@@ -35,16 +38,110 @@ namespace CH10.EchiquierGUI
 
         public  Echiquier()
         {
-            // Définition de la grille
+            // Définition et init de la grille
             echiquier = new Pieces[8, 8];
-            echiquier[0, 0] = Pieces.tour;
+            initEchiquier();
+        }
+
+        private void initEchiquier()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            // Ligne 1 - Pièces noires
+                            switch (j)
+                            {
+                                case 0:
+                                    echiquier[i, j] = Pieces.tour;
+                                    break;
+                                case 1:
+                                    echiquier[i, j] = Pieces.cavalier;
+                                    break;
+                                case 2:
+                                    echiquier[i, j] = Pieces.fou;
+                                    break;
+                                case 3:
+                                    echiquier[i, j] = Pieces.reine;
+                                    break;
+                                case 4:
+                                    echiquier[i, j] = Pieces.roi;
+                                    break;
+                                case 5:
+                                    echiquier[i, j] = Pieces.fou;
+                                    break;
+                                case 6:
+                                    echiquier[i, j] = Pieces.cavalier;
+                                    break;
+                                case 7:
+                                    echiquier[i, j] = Pieces.tour;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        case 1:
+                            // Ligne 2 - pions noirs
+                            echiquier[i, j] = Pieces.pion;
+                            break;
+                        case 2:
+                        case 3:
+                        case 4:
+                        case 5:
+                            // Ligne 3, 4, 5, 6 - vide
+                            echiquier[i, j] = Pieces.vide;
+                            break;
+                        case 6:
+                            // Ligne 7 - pions blancs
+                            echiquier[i, j] = Pieces.pion;
+                            break;
+                        case 7:
+                            // Ligne 8 - Pièces blanches
+                            switch (j)
+                            {
+                                case 0:
+                                    echiquier[i, j] = Pieces.tour;
+                                    break;
+                                case 1:
+                                    echiquier[i, j] = Pieces.cavalier;
+                                    break;
+                                case 2:
+                                    echiquier[i, j] = Pieces.fou;
+                                    break;
+                                case 3:
+                                    echiquier[i, j] = Pieces.reine;
+                                    break;
+                                case 4:
+                                    echiquier[i, j] = Pieces.roi;
+                                    break;
+                                case 5:
+                                    echiquier[i, j] = Pieces.fou;
+                                    break;
+                                case 6:
+                                    echiquier[i, j] = Pieces.cavalier;
+                                    break;
+                                case 7:
+                                    echiquier[i, j] = Pieces.tour;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
         }
 
         public List<Pieces> getPiecesLigne(int noLigne)
         {
             List<Pieces> listeP = new List<Pieces>();
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
                 listeP.Add(echiquier[noLigne, i]);                
             }
@@ -53,12 +150,12 @@ namespace CH10.EchiquierGUI
         }
 
 
+        // Not Used
         public Pieces getPiecePosition(int x, int y)
         {
             Pieces piece = echiquier[x, y];
             return piece;
         }
-
 
         public Point? PlacerPiece(int x, int y, Pieces piece)
         {

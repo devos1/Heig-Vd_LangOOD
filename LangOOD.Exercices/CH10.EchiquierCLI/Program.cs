@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CH10.EchiquierCLI
 {
-    enum Pieces { roi, reine, dame, fou, cavalier, tour, pion }
+    enum Pieces { roi, reine, dame, fou, cavalier, tour, pion, vide }
 
     class Program
     {
@@ -61,7 +61,7 @@ namespace CH10.EchiquierCLI
                         case 4:
                         case 5:
                             // Ligne 3, 4, 5, 6 - pions noirs
-                            echiquier[i, j] = Pieces.pion;
+                            echiquier[i, j] = Pieces.vide;
                             break;
                         case 6:
                             // Ligne 7 - pions blancs
@@ -131,7 +131,7 @@ namespace CH10.EchiquierCLI
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    Console.Write("{0,8}|", "Vide");
+                    Console.Write("{0,8}|", echiquier[2,i]);
                 }
                 Console.WriteLine("");
                 Console.Write("|");

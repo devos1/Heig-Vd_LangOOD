@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH07.CptInstances", "CH07.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH07.Singleton", "CH07.Singleton\CH07.Singleton.csproj", "{E32C2636-77B5-4F43-8FFC-2F7FB08FCF76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH10.EchiquierCLI", "CH10.EchiquierCLI\CH10.EchiquierCLI.csproj", "{5271B7FF-D262-4656-AF42-440EA29DE560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E32C2636-77B5-4F43-8FFC-2F7FB08FCF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E32C2636-77B5-4F43-8FFC-2F7FB08FCF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E32C2636-77B5-4F43-8FFC-2F7FB08FCF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5271B7FF-D262-4656-AF42-440EA29DE560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5271B7FF-D262-4656-AF42-440EA29DE560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5271B7FF-D262-4656-AF42-440EA29DE560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5271B7FF-D262-4656-AF42-440EA29DE560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

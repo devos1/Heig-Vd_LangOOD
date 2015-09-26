@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace CH10.EchiquierCLI
 {
-    enum PiecesBlanches {roi, reine, dame, fou, cavalier, tour, pion }
     enum Pieces { roi, reine, dame, fou, cavalier, tour, pion }
-
-    enum PiecesNoires {roi, reine, dame, fou, cavalier, tour, pion }
 
     class Program
     {
@@ -108,11 +105,53 @@ namespace CH10.EchiquierCLI
                 }
             }
 
-            // TODO: Finir et optimiser l'affichage
-            foreach (var p in echiquier)
+            //--------------------------------------------------------------
+            // Affichage échiquier avec pièces
+            //--------------------------------------------------------------
+            Console.Write("|");
+            
+            // Ligne 1
+            for (int i = 0; i < 8; i++)
             {
-                Console.WriteLine("|{0}", p);
+                Console.Write("{0,8}|", echiquier[0,i]);
             }
+            Console.WriteLine("");
+            Console.Write("|");
+            
+            // Ligne 2
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write("{0,6} N|", echiquier[1, i]);
+            }
+            Console.WriteLine("");
+            Console.Write("|");
+            
+            // Ligne 3 à 6
+            for (int i = 2; i < 6; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Console.Write("{0,8}|", "Vide");
+                }
+                Console.WriteLine("");
+                Console.Write("|");
+            }
+            
+            // Ligne 7
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write("{0,6} B|", echiquier[6, i]);
+            }
+            Console.WriteLine("");
+            Console.Write("|");
+           
+            // Ligne 8
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write("{0,8}|", echiquier[7, i]);
+            }
+
+            Console.WriteLine("");
         }
     }
 }

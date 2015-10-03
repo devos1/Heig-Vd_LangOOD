@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH10.EchiquierGUI", "CH10.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc.01.Interfaces", "Misc.01.Interfaces\Misc.01.Interfaces.csproj", "{6DB36706-00BC-47CD-B872-CE8F2CF5199F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH12_13.Heritage01", "CH12_13.Heritage01\CH12_13.Heritage01.csproj", "{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{6DB36706-00BC-47CD-B872-CE8F2CF5199F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DB36706-00BC-47CD-B872-CE8F2CF5199F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DB36706-00BC-47CD-B872-CE8F2CF5199F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc.01.Interfaces", "Misc.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH12_13.Heritage01", "CH12_13.Heritage01\CH12_13.Heritage01.csproj", "{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc.02.AssociationBi", "Misc.02.AssociationBi\Misc.02.AssociationBi.csproj", "{A0235A3A-834B-477D-B7FD-B686DC913D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F239DD0A-B96F-43B7-BDDC-6C47B3FCFF10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0235A3A-834B-477D-B7FD-B686DC913D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0235A3A-834B-477D-B7FD-B686DC913D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0235A3A-834B-477D-B7FD-B686DC913D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0235A3A-834B-477D-B7FD-B686DC913D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

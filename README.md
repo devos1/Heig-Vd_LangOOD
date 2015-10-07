@@ -1,2 +1,2 @@
 # Heig-Vd_LangOOD
-Exercises from LangOOD course from Heig-Vd
+Exercises from LangOOD course @ Heig-Vd

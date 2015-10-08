@@ -12,6 +12,7 @@ namespace Misc._02.AssociationBi
 
         public ClassA()
         {
+            cb = new ClassB();
         }
 
         public void quiSuisJe()
@@ -20,8 +21,7 @@ namespace Misc._02.AssociationBi
         }
 
         internal void quiEstLui()
-        {
-            cb = new ClassB();
+        {        
             cb.quiSuisJe();
         }
 

@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Misc._02.AssociationBi.ClassA" Collapsed="true">
+  <Class Name="Misc._02.AssociationBi.ClassA">
     <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>ClassA.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cb" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="Misc._02.AssociationBi.ClassB" Collapsed="true">
+  <Class Name="Misc._02.AssociationBi.ClassB">
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>ClassB.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ca" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Misc._02.AssociationBi.Program" Collapsed="true">
-    <Position X="1.75" Y="1.5" Width="1.5" />
+    <Position X="1.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>

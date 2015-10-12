@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misc.03.StatePattern01", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH15.Properties", "CH15.Properties\CH15.Properties.csproj", "{E12D5934-D4D4-466A-8199-B6DCB466E29D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH16.IndexersAtZoo", "CH16.IndexersAtZoo\CH16.IndexersAtZoo.csproj", "{F99DD09A-4495-4C63-911C-4AE5A987C7DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{E12D5934-D4D4-466A-8199-B6DCB466E29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E12D5934-D4D4-466A-8199-B6DCB466E29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E12D5934-D4D4-466A-8199-B6DCB466E29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -35,10 +35,10 @@ namespace CH07.Singleton
 
         private void btnRight_Click(object sender, RoutedEventArgs e)
         {
-            Objet o = Objet.CreateInstance;
+            Objet o1 = Objet.CreateInstance;
             lblLeft.Content = Objet.GetInstancesCount();
-            o.texteInstance = "Or Not";
-            lblRight.Content = o.texteInstance;
+            o1.texteInstance = "Or Not";
+            lblRight.Content = o1.texteInstance;
         }
     }
 }

@@ -1,46 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Misc._03.StatePattern01.EnDeplacement">
+  <Class Name="Misc._03.StatePattern01.EnDeplacement" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAACI=</HashCode>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAAAgAAAACAI=</HashCode>
       <FileName>EnDeplacement.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Misc._03.StatePattern01.EnMaintenance">
+  <Class Name="Misc._03.StatePattern01.EnMaintenance" Collapsed="true">
     <Position X="5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAACI=</HashCode>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAAAgAAAACAI=</HashCode>
       <FileName>EnMaintenance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Misc._03.StatePattern01.Etat" Collapsed="true">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="Misc._03.StatePattern01.EnVente" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAACI=</HashCode>
-      <FileName>Etat.cs</FileName>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAAAgAAAACAI=</HashCode>
+      <FileName>EnVente.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Misc._03.StatePattern01.Immobile">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Class Name="Misc._03.StatePattern01.TransitionEtatImpossibleException" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAACI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EtatVoiture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Misc._03.StatePattern01.EtatVoiture" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAEAAAgAAAKAAAAECAAIAAAAAAgAAAACAI=</HashCode>
+      <FileName>EtatVoiture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Misc._03.StatePattern01.Immobile" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAAAgAAAACAI=</HashCode>
       <FileName>Immobile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Misc._03.StatePattern01.Program" Collapsed="true">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Misc._03.StatePattern01.Voiture" Collapsed="true">
-    <Position X="7.5" Y="1.25" Width="1.5" />
+  <Class Name="Misc._03.StatePattern01.Vendue" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAAAgAAAACAI=</HashCode>
+      <FileName>Vendue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Misc._03.StatePattern01.Voiture" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAEAAAAAAAKAAAAEAAAAAAAAACgAAAAiAI=</HashCode>
       <FileName>Voiture.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Enum Name="Misc._03.StatePattern01.enEtatVoiture" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAABgAAAAABAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>EtatVoiture.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

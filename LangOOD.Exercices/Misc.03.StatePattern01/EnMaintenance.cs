@@ -6,31 +6,52 @@ using System.Threading.Tasks;
 
 namespace Misc._03.StatePattern01
 {
-    class EnMaintenance : Etat
+    class EnMaintenance : EtatVoiture
     {
-        public EnMaintenance()
+        public EnMaintenance(Voiture v)
+            : base(v)
         {
-            Console.WriteLine("La voiture est en maintenance!!");
+            etatCourant = enEtatVoiture.EnMaintenance;
         }
 
-        public override void Arrêter(Voiture v)
+        public override EtatVoiture Deplacer()
         {
-            // On ne peut arrêter la voiture vu qu'elle ne roule pas
+            throw new TransitionEtatImpossibleException("Impossible de déplacer une voiture en maintenance");
         }
 
-        public override void CourseEssai(Voiture v)
+        public override EtatVoiture Arreter()
         {
-            v.Etat = new EnDeplacement();
+            throw new TransitionEtatImpossibleException("Impossible d'arrêter une voiture en maintenance");
         }
 
-        public override void Deplacer(Voiture v)
+        public override EtatVoiture EffectuerCourseEssai()
         {
-            // On ne peut dépalcer la voiture vu qu'elle en maintenance
+            return new EnDeplacement(voiture);
         }
 
-        public override void RetourGarage(Voiture v)
+        public override EtatVoiture RetournerauGarage()
         {
-            throw new NotImplementedException();
+            throw new TransitionEtatImpossibleException("Impossible de retourner au garage une voiture qui y est déjà");
+        }
+
+        public override EtatVoiture FaireService()
+        {
+            throw new TransitionEtatImpossibleException("La voiture est déjà au service");
+        }
+
+        public override EtatVoiture RetourService()
+        {
+            return new Immobile(voiture);
+        }
+
+        public override EtatVoiture MettreEnVente()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de mettre en vente une voiture en maintenance");
+        }
+
+        public override EtatVoiture Vendre()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de vendre une voiture en maintenance");
         }
     }
 }

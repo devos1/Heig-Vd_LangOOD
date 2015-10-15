@@ -10,14 +10,45 @@ namespace Misc._03.StatePattern01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Création de la voiture à l'état initial");
-            Voiture v = new Voiture(new Immobile());
-            v.Etat.Deplacer(v);
-            v.Etat.RetourGarage(v);
-            v.Etat.Deplacer(v);         // Pas possible -> ok
-            v.Etat.Arrêter(v);          // Pas possible -> ok
-            v.Etat.CourseEssai(v);      // Ok car la voiture est en maintenance
-            v.Etat.CourseEssai(v);      // Pas possible la voiture est en déplacement -> ok
+            try
+            {
+
+                Voiture v = new Voiture(enEtatVoiture.Immobile);
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.Deplacer();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.Arreter();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.FaireService();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.EffectuerCourseEssai();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.RetournerauGarage();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.RetourService();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.MettreEnVente();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+                v.Vendre();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+                v.Vendre();
+                Console.WriteLine("La Voiture est dans l'état {0}", v.Etat);
+
+            }
+            catch (TransitionEtatImpossibleException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
         }
     }
 }

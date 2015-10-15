@@ -6,31 +6,47 @@ using System.Threading.Tasks;
 
 namespace Misc._03.StatePattern01
 {
-    class Immobile : Etat
+    class Immobile : EtatVoiture
     {
-        public Immobile()
+        public Immobile(Voiture v)
+            : base(v)
         {
-            Console.WriteLine("La voiture est immobile");
+            etatCourant = enEtatVoiture.Immobile;
         }
 
-        public override void Arrêter(Voiture v)
+        public override EtatVoiture Arreter()
         {
-            // Rien à faire, la voiture est déjà arrêtée
+            throw new TransitionEtatImpossibleException("Impossible d'arrêter une voiture déjà arrêtée");
         }
 
-        public override void CourseEssai(Voiture v)
+        public override EtatVoiture Deplacer()
         {
-            throw new NotImplementedException();
+            return new EnDeplacement(voiture);
+        }
+        public override EtatVoiture EffectuerCourseEssai()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de faire une course d'essai hors d'un service de maintenance");
+        }
+        public override EtatVoiture RetournerauGarage()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de retourner au garage hors d'une course d'essai");
+        }
+        public override EtatVoiture FaireService()
+        {
+            return new EnMaintenance(voiture);
+        }
+        public override EtatVoiture RetourService()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de retourner du service un véhicule qui n'y est pas");
+        }
+        public override EtatVoiture MettreEnVente()
+        {
+            return new EnVente(voiture);
+        }
+        public override EtatVoiture Vendre()
+        {
+            throw new TransitionEtatImpossibleException("Impossible de vendre une voiture qui n'est pas en vente");
         }
 
-        public override void Deplacer(Voiture v)
-        {
-            v.Etat = new EnDeplacement();
-        }
-
-        public override void RetourGarage(Voiture v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH15.Properties", "CH15.Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH16.IndexersAtZoo", "CH16.IndexersAtZoo\CH16.IndexersAtZoo.csproj", "{F99DD09A-4495-4C63-911C-4AE5A987C7DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH17_18.GestionEmployees", "CH17_18.GestionEmployees\CH17_18.GestionEmployees.csproj", "{EC78085E-1384-4B45-A38C-BCBA05F073A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F99DD09A-4495-4C63-911C-4AE5A987C7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC78085E-1384-4B45-A38C-BCBA05F073A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC78085E-1384-4B45-A38C-BCBA05F073A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC78085E-1384-4B45-A38C-BCBA05F073A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC78085E-1384-4B45-A38C-BCBA05F073A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
